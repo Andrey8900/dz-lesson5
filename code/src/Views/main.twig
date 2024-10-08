@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ title }}</title>
+         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+         
+    </head>
+    <body>
+    <p>Current Time: {{ "now"|date("H:i:s") }}</p>
+     {% include 'header.twig' %}
+        {% include content_template_name %}
+         {% include 'sidebar.twig' %}
+          {% include 'footer.twig' %}
+    </body>
+</html>
